@@ -16,7 +16,10 @@
         if (last == "a") { last = "äa" }
         if (last == "i") { last = "yii" }
         if (last == "e") { last = "ïee" }
+        if (last == "o") { last = "œ"}
         string_array[i] = string_array[i] + last;
+
+      // var middle = string_array[i].charAt(string_array[i].length);
 
       }
       if (num_parole>10) string_array.splice(Math.floor(Math.random() * num_parole), 0, "amïo")
