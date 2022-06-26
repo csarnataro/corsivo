@@ -14,15 +14,18 @@
       for (var i = 0; i < num_parole; i++) {
         var last = string_array[i].charAt(string_array[i].length - 1);
         if (last == "a") { last = "äa" }
-        if (last == "i") { last = "yii" }
+        if (last == "i") { last = "ïi" }
         if (last == "e") { last = "ïee" }
-        if (last == "o") { last = "œ"}
+        if (last == "o") { last = "oœ"}
+        if (last == ",") { last = ",amïo"}
+        if (last == "n") { last = "n"}
+
         string_array[i] = string_array[i] + last;
 
       // var middle = string_array[i].charAt(string_array[i].length);
 
       }
-      if (num_parole>10) string_array.splice(Math.floor(Math.random() * num_parole), 0, "amïo")
+      // if (num_parole>10) string_array.splice(Math.floor(Math.random() * num_parole), 0, "amïo")
       return string_array.join(" ");
    
     }
