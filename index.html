@@ -35,6 +35,12 @@
       document.getElementById("p1").innerHTML = text;
     }
 
+    function sendWhatsapp(){
+        var url     = "www.abcd.com/?name=" + text;
+        var sMsg    = encodeURIComponent( text + url );
+        var whatsapp_url = "whatsapp://send?text=" + text;
+        window.location.href = whatsapp_url;
+    }
     
 
   </script>
@@ -59,12 +65,8 @@
       </div>
       <div class="order-5 col-span-1 sm:col-span-2 text-center">
         <button type="button" class="border rounded px-6 py-2" onclick="applyTranslation()">tradurreïee</button>
-        <a href=
-        "whatsapp://send?text=" + fname;
-                data-action="share/whatsapp/share"
-                target="_blank">
-                Share to whatsapp
-            </a>
+        <button type="button" class="border rounded px-6 py-2" onclick="sendWhatsapp()">tradurreïee</button>
+    
       </div>
     </div>
     <br/>
