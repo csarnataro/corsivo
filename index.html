@@ -10,18 +10,22 @@
     function translate(source) {
       var string_array = source.split(' ');
       var num_parole = string_array.length;
+     
       for (var i = 0; i < num_parole; i++) {
         var last = string_array[i].charAt(string_array[i].length - 1);
         if (last == "a") { last = "äa" }
         if (last == "i") { last = "yii" }
         if (last == "e") { last = "ïee" }
         string_array[i] = string_array[i] + last;
+
       }
+      if (num_parole>10) string_array.splice(Math.floor(Math.random() * num_parole), 0, "amïo")
       return string_array.join(" ");
+   
     }
     function applyTranslation() {
       var fname = document.getElementById("fname").value;
-      var text = translate(fname);
+      var text ="Amïo " + translate(fname);
       document.getElementById("p1").innerHTML = text;
     }
 
