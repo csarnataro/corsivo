@@ -15,14 +15,14 @@
         var last = string_array[i].charAt(string_array[i].length - 1);
         if (last == "a") { last = "äa" }
         if (last == "i") { last = "ïi" }
-        if (last == "e") { last = "ïee" }
+        if (last == "e") { last = "ïe" }
         if (last == "o") { last = "oœ"}
         if (last == ",") { last = "amïo"}
         if (last == "n" || last == "b" || last=="d" || last =="u")  { last = ""}
 
         string_array[i] = string_array[i] + last;
 
-      // var middle = string_array[i].charAt(string_array[i].length);
+       //var middle = string_array[i].charAt(string_array[i].length/2);
 
       }
       // if (num_parole>10) string_array.splice(Math.floor(Math.random() * num_parole), 0, "amïo")
