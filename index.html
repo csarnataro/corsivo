@@ -19,6 +19,7 @@
         if (last == "e") { last = "ïe" }
         if (last == "o") { last = "oœ"}
         if (last == ",") { last = " amïo"}
+        // if (last.match(/[.,\?\/#!$%\^&\*;:{}=\-_`~()]/)) { last = " amïo"}
         if (last == "n" || last == "b" || last=="d" || last =="u")  { last = ""}
 
         string_array[i] = string_array[i] + last;
@@ -53,10 +54,10 @@
       </div>
       <div class="h-4 sm:order-2 order-3">In cörsivœ si scrive così</div>
       <div class="sm:order-3 order-2">
-        <textarea class="border rounded w-full h-24" id="fname" name="fname">Nel mezzo del cammin di nostra vita, mi ritrovai per una selva oscura, ché la diritta via era smarrita</textarea>
+        <textarea class="border rounded w-full h-24 placeholder-gray-900" onInput="applyTranslation()" id="fname" name="fname" placeholder="Nel mezzo del cammin di nostra vita, mi ritrovai per una selva oscura, ché la diritta via era smarrita"></textarea>
       </div>
       <div class="sm:order-4 order-4">
-        <p id="p1" class="border rounded w-full h-24 bg-gray-100">Amïo Nell mezzooœ dell cammin diïi nostraäa vita,amïo miïi ritrovaiïi perr unaäa selvaäa oscura,amïo chéé laäa dirittaäa viaäa eraäa smarritaäa
+        <p id="p1" class="border rounded w-full h-24 bg-gray-100">Amïo Nell mezzooœ dell cammin diïi nostraäa vita, amïo miïi ritrovaiïi perr unaäa selvaäa oscura, amïo chéé laäa dirittaäa viaäa eraäa smarritaäa
 
         </p>
       </div>
